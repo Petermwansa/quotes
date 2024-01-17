@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background: grey;
+}
+.qoute__box{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.45);
+}
+.qoute__box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+/* this will add the horizontal line below the title  */
+.qoute__box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: cyan;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.qoute__box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.qoute__box blockquote::before, .qoute__box blockquote::after{
+    content: '"';
+}

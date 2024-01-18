@@ -45,3 +45,46 @@ body{
 .qoute__box blockquote::before, .qoute__box blockquote::after{
     content: '"';
 }
+.qoute__box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.qoute__box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: green;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.qoute__box div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.qoute__box button {
+    background-color: cyan;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.qoute__box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+.qoute__box button:nth-child(2){
+    background: transparent;
+    color: black;
+    border: 1px solid cyan;
+}

@@ -1,3 +1,4 @@
+// the api to generate quotes from  lukePeavey  
 const api_url = "https://api.quotable.io/random";
 
 const quote = document.getElementById("quote");
@@ -12,6 +13,7 @@ async function getQuote(url){
 
 getQuote(api_url);
 
+// this function is from the tweeter developers website and it shares the quote 
 function tweet() {
     window.open("https://twitter.com/intent/tweet?text=" + 
     quote.innerHTML + "----- by " + author.innerHTML, "Tweet Window", "width=600, height=300");
